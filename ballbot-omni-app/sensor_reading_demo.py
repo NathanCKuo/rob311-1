@@ -42,7 +42,9 @@ if __name__ == "__main__":
     register_topics(ser_dev)  # Register message types
 
     # Start serial read thread to handle incoming data
-    serial_read_thread = Thread(target=ser_dev.read_loop, args=(), daemon=True)
+    #serial_read_thread = Thread(target=ser_dev.read_loop, args=(), daemon=True)
+    #serial_read_thread.start()
+    serial_read_thread = threading.Thread(target=SerialProtocol.read_loop, args=(ser_dev,), daemon=True)
     serial_read_thread.start()
 
     # Define command and state structures

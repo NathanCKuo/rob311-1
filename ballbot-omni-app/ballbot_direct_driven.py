@@ -61,13 +61,11 @@ JOYSTICK_SCALE = 32767  # Scale factor for normalizing joystick values
 # - Suggested range: 0.5 to 2.0.
 # ---------------------------------------------------------------------------
 
-TX_MAX = 2.0  # Maximum torque along x-axis
-TY_MAX = 2.0  # Maximum torque along y-axis
-TZ_MAX = 1.0  # Maximum torque along z-axis (yaw)
+TX_MAX = 0.5  # Maximum torque along x-axis
+TY_MAX = 0.5  # Maximum torque along y-axis
+TZ_MAX = 0.5  # Maximum torque along z-axis (yaw)
 
 # ---------------------------------------------------------------------------
-
-
 
 
 

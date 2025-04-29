@@ -190,6 +190,7 @@ if __name__ == "__main__":
                 f"T1: {T1:.2f}, T2: {T2:.2f}, T3: {T3:.2f} | "
                 f"Roll: {theta_x:.2f}, Pitch: {theta_y:.2f}"
             )
+            print(f"Left Stick: ({left_x:.2f}, {left_y:.2f}), Right Stick: ({right_x:.2f}, {right_y:.2f})")
         except KeyError:
             print("Waiting for sensor data...")
 
